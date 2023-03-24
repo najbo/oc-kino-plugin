@@ -1,0 +1,43 @@
+<div class="bg-white">
+  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <h2 class="sr-only">Shows</h2>
+
+    <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+
+      {% for show in __SELF__.shows %}
+        <div class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
+          <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+            <img src="{{ show.movie.poster.thumb(400, auto) }}" alt="{{ show.movie.name }}" class="h-full w-full object-cover object-center sm:h-full sm:w-full">
+          </div>
+          <div class="hover:bg-gray-200 flex flex-1 flex-col space-y-2 p-4">
+            <h3 class="text-3xl font-medium text-gray-900">
+              <a href="{{ 'shows/show'|page }}/{{ show.id }}">
+                <span aria-hidden="true" class="absolute inset-0"></span>
+                {{ show.movie.name|upper }}
+              </a>
+            </h3>
+            <p class="text-base font-medium text-gray-900">{{ show.show_date }}</p>
+            <p class="pb-2 text-sm italic text-gray-500">{{ show.movie.genre.name }} | {{ show.movie.runtime }} min.</p>
+
+            <p class="text-sm text-gray-500 py-2">{{ show.movie.teaser }}</p>
+
+            <div class="flex flex-1 flex-col justify-end">
+              <!--<p class="pb-2 text-sm italic text-gray-500">{{ show.movie.genre.name }}</p>-->
+            <div class="text-sm text-gray-500"><strong>Director</strong> : {{ show.movie.directors }}</div>
+            {% if show.movie.actors %}
+              <div class="text-sm text-gray-500"><strong>Actors</strong> :
+                {% for actor in show.movie.actors %}
+                  {{ actor.name }}
+                  {% if not loop.last %},{% endif %}
+                {% endfor %}
+            </div>              
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

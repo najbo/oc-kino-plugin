@@ -1,0 +1,14 @@
+name: Movies
+modelClass: DigArt\Kino\Models\Movie
+form: $/digart/kino/models/movie/fields.yaml
+defaultRedirect: digart/kino/movies
+create:
+    title: 'Create a movie'
+    redirect: 'digart/kino/movies/update/:id'
+    redirectClose: digart/kino/movies
+update:
+    title: 'Update a movie'
+    redirect: digart/kino/movies
+    redirectClose: digart/kino/movies
+preview:
+    title: 'Preview a movie'

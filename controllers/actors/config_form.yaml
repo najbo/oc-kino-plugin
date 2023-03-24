@@ -1,0 +1,11 @@
+name: Actors
+modelClass: DigArt\Kino\Models\Actor
+form: $/digart/kino/models/actor/fields.yaml
+defaultRedirect: digart/kino/actors
+create:
+    redirect: 'digart/kino/actors/update/:id'
+    redirectClose: digart/kino/actors
+update:
+    redirect: digart/kino/actors
+    redirectClose: digart/kino/actors
+preview: {  }

@@ -1,0 +1,11 @@
+name: Status
+modelClass: DigArt\Kino\Models\Status
+form: $/digart/kino/models/status/fields.yaml
+defaultRedirect: digart/kino/status
+create:
+    redirect: 'digart/kino/status/update/:id'
+    redirectClose: digart/kino/status
+update:
+    redirect: digart/kino/status
+    redirectClose: digart/kino/status
+preview: {  }

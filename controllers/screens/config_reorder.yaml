@@ -1,0 +1,5 @@
+title: Screens
+modelClass: DigArt\Kino\Models\Screen
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

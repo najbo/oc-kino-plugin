@@ -1,0 +1,15 @@
+columns:
+    name:
+        label: Employee
+        type: text
+        searchable: true
+        sortable: true
+        select: "concat(first_name, ' ' ,last_name)"
+        relation: user
+    group:
+        label: 'Rôle or position'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: group

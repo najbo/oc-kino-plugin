@@ -1,0 +1,47 @@
+fields:
+    starts_at:
+        label: 'Start at'
+        mode: datetime
+        format: d.m.Y
+        span: auto
+        type: datepicker
+    status:
+        label: 'Show status'
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        type: relation
+    movie:
+        label: Movie
+        span: auto
+        nameFrom: name
+        descriptionFrom: year
+        list: $/digart/kino/models/movie/columns.yaml
+        type: recordfinder
+    screen:
+        label: 'Screen / Room'
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        type: relation
+tabs:
+    fields:
+        comment:
+            label: Comments
+            span: auto
+            type: text
+            tab: Informations
+        description:
+            label: Description
+            span: full
+            size: small
+            type: textarea
+            tab: Informations
+        shifts:
+            span: full
+            path: shifts
+            context:
+                - update
+                - preview
+            type: partial
+            tab: Shifts

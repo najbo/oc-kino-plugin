@@ -1,0 +1,10 @@
+name: Shows
+form: $/digart/kino/models/show/fields.yaml
+modelClass: DigArt\Kino\Models\Show
+defaultRedirect: digart/kino/shows
+create:
+    redirect: 'digart/kino/shows/update/:id'
+    redirectClose: digart/kino/shows
+update:
+    redirect: digart/kino/shows
+    redirectClose: digart/kino/shows

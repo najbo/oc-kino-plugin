@@ -1,0 +1,5 @@
+title: Status
+modelClass: DigArt\Kino\Models\Status
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,33 @@
+fields:
+    theater_name:
+        label: 'Theater name'
+        span: auto
+        default: 'Cinema LaraRex'
+        type: text
+        commentAbove: 'For Frontend identification'
+    extra_runtime:
+        label: 'Extra show runtime'
+        span: auto
+        default: '15'
+        type: number
+        commentAbove: 'In minutes (advertisement, trailers, ...)'
+tabs:
+    fields:
+        street:
+            label: Street
+            span: auto
+            default: 'Cinecittastrasse 32b'
+            type: text
+            tab: Address
+        code_city:
+            label: 'Code and City'
+            span: auto
+            default: '3000 Bern'
+            type: text
+            tab: Address
+        website:
+            label: Website
+            span: auto
+            default: 'https://www.kino.test'
+            type: text
+            tab: Address

@@ -1,0 +1,10 @@
+name: Genres
+form: $/digart/kino/models/genre/fields.yaml
+modelClass: DigArt\Kino\Models\Genre
+defaultRedirect: digart/kino/genres
+create:
+    redirect: 'digart/kino/genres/update/:id'
+    redirectClose: digart/kino/genres
+update:
+    redirect: digart/kino/genres
+    redirectClose: digart/kino/genres

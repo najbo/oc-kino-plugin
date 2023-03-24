@@ -1,0 +1,72 @@
+plugin:
+    name: 'digart.kino::lang.plugin.name'
+    description: 'digart.kino::lang.plugin.description'
+    author: 'Digital Artisan'
+    icon: oc-icon-film
+    homepage: ''
+permissions:
+    digart.kino.movies:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage the movies of the plugin'
+    digart.kino.genres:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage the movies genres'
+    digart.kino.actors:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage the actors'
+    digart.kino.shows:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage the shows'
+    digart.kino.status:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage the show statuses'
+    digart.kino.manage_plugins:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage plugins Settings'
+    digart.kino.screens:
+        tab: 'digart.kino::lang.plugin.name'
+        label: 'Manage the screens'
+navigation:
+    kino-menu:
+        label: 'digart.kino::lang.plugin.name'
+        url: digart/kino/movies
+        icon: icon-play
+        permissions:
+            - 'digart.kino.*'
+        sideMenu:
+            shows:
+                label: Shows
+                url: digart/kino/shows
+                icon: icon-calendar-o
+                permissions:
+                    - digart.kino.shows
+            movies:
+                label: Movies
+                url: digart/kino/movies
+                icon: icon-film
+                iconSvg: ''
+            actors:
+                label: Actors
+                url: digart/kino/actors
+                icon: icon-users
+                permissions:
+                    - digart.kino.actors
+            genres:
+                label: 'Movie genres'
+                url: digart/kino/genres
+                icon: icon-tag
+                permissions:
+                    - digart.kino.genres
+            show-status:
+                label: 'Show status'
+                url: digart/kino/status
+                icon: icon-eye
+                permissions:
+                    - digart.kino.status
+            screens:
+                label: Screens
+                url: digart/kino/screens
+                icon: icon-sitemap
+                iconSvg: ''
+                permissions:
+                    - digart.kino.screens

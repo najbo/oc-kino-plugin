@@ -1,0 +1,27 @@
+columns:
+    starts_at:
+        label: 'Start date & time'
+        type: datetime
+        searchable: true
+        sortable: true
+    movie:
+        label: Movie
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: movie
+    screen:
+        label: Screen
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: screen
+    status:
+        label: Status
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: status

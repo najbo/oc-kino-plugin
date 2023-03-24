@@ -1,0 +1,78 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    genre:
+        label: 'Movie genre'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    directors:
+        label: Directors
+        span: left
+        type: text
+    actors:
+        label: Actors
+        separator: comma
+        mode: relation
+        customTags: false
+        useKey: false
+        span: auto
+        type: taglist
+    runtime:
+        label: Runtime
+        span: auto
+        type: number
+    year:
+        label: Year
+        span: auto
+        type: number
+    slug:
+        label: 'Slug'
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+        type: text
+tabs:
+    fields:
+        teaser:
+            label: Teaser
+            size: small
+            span: auto
+            type: textarea
+            tab: Informations
+        description:
+            label: Description
+            size: large
+            span: auto
+            type: textarea
+            tab: Informations
+        rating:
+            label: Rating
+            span: auto
+            type: number
+            tab: Informations
+        images:
+            label: Images
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: portrait
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Medias
+        poster:
+            label: 'Poster upload'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Medias

@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: false
+    is_frontend:
+        label: Fontend
+        type: switch
+        searchable: true
+        sortable: false

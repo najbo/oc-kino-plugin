@@ -1,0 +1,50 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table digart_kino_movies'
+    - builder_table_create_digart_kino_movies.php
+1.0.3:
+    - 'Created table digart_kino_genres'
+    - builder_table_create_digart_kino_genres.php
+1.0.4:
+    - 'Created table digart_kino_actors'
+    - builder_table_create_digart_kino_actors.php
+1.0.5:
+    - 'Created table digart_kino_actor_movie'
+    - builder_table_create_digart_kino_actor_movie.php
+1.0.6:
+    - 'Created table digart_kino_shows'
+    - builder_table_create_digart_kino_shows.php
+1.0.7:
+    - 'Created table digart_kino_status'
+    - builder_table_create_digart_kino_status.php
+1.0.8:
+    - 'Created table digart_kino_screens'
+    - builder_table_create_digart_kino_screens.php
+1.0.9:
+    - 'Seed Genres'
+    - seeder_109.php
+1.0.10:
+    - 'Seed Movies'
+    - seeder_1010.php
+1.0.11:
+    - 'Seed Actors'
+    - seeder_1011.php
+1.0.12:
+    - 'Seed Movie Statuses'
+    - seeder_1012.php
+1.0.13:
+    - 'Seed Screens'
+    - seeder_1013.php
+1.0.14:
+    - 'Seed Shows'
+    - seeder_1014.php
+1.0.15:
+    - 'Created table digart_kino_shows_users'
+    - builder_table_create_digart_kino_shows_users.php
+1.0.16:
+    - 'Created table digart_kino_favorites'
+    - builder_table_create_digart_kino_favorites.php
+1.0.17:
+    - 'Created table digart_kino_show_user'
+    - builder_table_create_digart_kino_show_user.php

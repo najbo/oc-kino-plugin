@@ -1,0 +1,6 @@
+columns:
+    name:
+        label: 'Actor name'
+        type: text
+        searchable: true
+        sortable: true

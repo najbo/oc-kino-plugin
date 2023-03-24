@@ -1,0 +1,10 @@
+name: Screens
+form: $/digart/kino/models/screen/fields.yaml
+modelClass: DigArt\Kino\Models\Screen
+defaultRedirect: digart/kino/screens
+create:
+    redirect: 'digart/kino/screens/update/:id'
+    redirectClose: digart/kino/screens
+update:
+    redirect: digart/kino/screens
+    redirectClose: digart/kino/screens

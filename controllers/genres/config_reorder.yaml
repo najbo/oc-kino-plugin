@@ -1,0 +1,5 @@
+title: Genres
+modelClass: DigArt\Kino\Models\Genre
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

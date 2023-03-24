@@ -1,0 +1,15 @@
+title: Shows
+modelClass: DigArt\Kino\Models\Show
+list: $/digart/kino/models/show/columns.yaml
+recordUrl: 'digart/kino/shows/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: start_at
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

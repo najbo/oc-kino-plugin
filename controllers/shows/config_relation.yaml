@@ -1,0 +1,13 @@
+shifts:
+    label: Shifts
+    emptyMessage: No shifts for the moment
+    customMessages:
+        buttonCreate: Add a new shift
+    view:
+        list: $/digart/kino/models/shift/columns.yaml
+        toolbarButtons: create|delete
+        showSearch: true
+        filter: config_shifts_filter.yaml
+    manage:
+        form: $/digart/kino/models/shift/fields.yaml
+        showSearch: true  

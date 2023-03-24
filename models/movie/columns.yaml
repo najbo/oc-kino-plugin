@@ -1,0 +1,33 @@
+columns:
+    poster:
+        label: Poster
+        type: image
+    name:
+        label: 'digart.kino::lang.plugin.name'
+        type: text
+        searchable: true
+        sortable: true
+    directors:
+        label: Directors
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: Year
+        type: number
+        searchable: true
+        sortable: true
+    genre:
+        label: 'Movie genre'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: genre
+    actors:
+        label: Actors
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: actors

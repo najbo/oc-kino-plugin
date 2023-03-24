@@ -1,0 +1,20 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    is_frontend:
+        label: 'Published on frontend'
+        span: auto
+        'on': 'YES'
+        'off': 'NO'
+        default: 1
+        type: switch
+tabs:
+    fields:
+        description:
+            label: Description
+            span: full
+            size: small
+            type: textarea
+            tab: Informations

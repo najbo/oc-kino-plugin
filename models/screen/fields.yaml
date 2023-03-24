@@ -1,0 +1,17 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        type: text
+    seats:
+        label: Seats
+        span: auto
+        type: number
+tabs:
+    fields:
+        description:
+            label: Description
+            span: full
+            size: small
+            type: textarea
+            tab: Informations

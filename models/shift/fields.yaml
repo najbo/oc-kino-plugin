@@ -1,0 +1,19 @@
+fields:
+    user:
+        label: Employee
+        span: auto
+        nameFrom: full_name
+        descriptionFrom: description
+        list: ~/modules/backend/models/user/columns.yaml
+        type: recordfinder
+    group:
+        label: 'Rôle or postion'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    description:
+        label: Description
+        size: small
+        span: full
+        type: textarea

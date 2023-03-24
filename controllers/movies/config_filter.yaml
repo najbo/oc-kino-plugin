@@ -1,0 +1,14 @@
+scopes:
+    genre:
+        label: Genres
+        modelClass: DigArt\Kino\Models\Genre
+        conditions: genre_id in (:filtered)
+    year:
+        label: Years
+        type: numberrange
+        conditions: year >= ':min' and year <= ':max'
+    actors:
+        label: Actors
+        modelClass: DigArt\Kino\Models\Actor
+        conditions: id in (select movie_id from digart_kino_actor_movie where actor_id in (:filtered))
+        nameFrom: name

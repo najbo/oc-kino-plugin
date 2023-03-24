@@ -1,0 +1,12 @@
+scopes:
+    user:
+        label: Employees
+        modelClass: Backend\Models\User
+        nameFrom: full_name
+        conditions: user_id in (:filtered)
+    group:
+        label: Rôles
+        modelClass: Backend\Models\UserGroup
+        nameFrom: name
+        conditions: group_id in (:filtered)
+
