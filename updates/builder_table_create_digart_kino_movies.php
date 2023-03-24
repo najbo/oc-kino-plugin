@@ -11,7 +11,7 @@ class BuilderTableCreateDigartKinoMovies extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->string('name', 255);
-            $table->string('slug', 255);
+            $table->string('slug', 255)->nullable();
             $table->text('description')->nullable();
             $table->text('teaser')->nullable();
             $table->string('directors')->nullable();
