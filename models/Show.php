@@ -97,6 +97,10 @@ class Show extends Model
 
     public function scopeHasFavorite($query, $user)
     {
+        if (! $user) {
+            return;
+        }
+
         return $query->whereRelation('users', 'user_id', $user->id);
     }
 

@@ -40,16 +40,16 @@
         </div>
         <div class="pt-6">This presentation will end at {{ show.human_ends_at }} approx.</div>
 
-
-        <div data-request-data="{ id: {{ show.id }} }" class="pt-4">
-          <button 
-            data-request="onFavorite"
-            data-request-flash
-            class="font-bold"
-            id="favorite">
-         {{ count_favorite ? 'Remove from my favorites': 'Add to my favorites' }}</button>
-        </div>
-
+        {% if user %}
+          <div data-request-data="{ id: {{ show.id }} }" class="pt-4">
+            <button 
+              data-request="onFavorite"
+              data-request-flash
+              class="font-bold"
+              id="favorite">
+           {{ count_favorite ? 'Remove from my favorites': 'Add to my favorites' }}</button>
+          </div>
+        {% endif %}
         <dl class="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-4">
           <div>
             <dt class="text-sm font-semibold leading-6 text-gray-600">Genre</dt>
