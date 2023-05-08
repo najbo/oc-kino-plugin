@@ -114,14 +114,19 @@ class Show extends Model
 
     public function getCountFavoriteAttribute()
     {
-        $userId = Auth::getUser()->id;
+        $frontend_user = Auth::getUser();
+
+        if (!$frontend_user) {
+            return;
+        }
+
+        $userId = $frontend_user->id;
 
         $query = $this->whereHas('users', function ($query) {
             $query->where('user_id', 1);
         })
         ->count();
         
-        //$query = $this->whereRelation('users', 'user_id', $userId)->count();
         return $query;
     }
 }

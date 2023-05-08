@@ -24,9 +24,19 @@ Route::get('myroute', function () {
 
 Route::get('register', function () {
 
-    $user = User::with('groups')->find(13);
+    $user = User::with('groups')->find(2);
+
+    if (!$user) {
+        return 'Nothing to see here - no user with ID 2';
+    }
+
     $group = UserGroup::whereCode('registered')->first();
     
-    $user->groups()->add($group);
+    try {
+        $user->groups()->add($group);
+    } catch (Exception $e) {
+        return $e;
+    }
+    
     return $user;
 });

@@ -48,11 +48,11 @@ class Plugin extends PluginBase
             $user->groups()->add($group);
 
             return;
+            
             // OR :
             $user->groups =  $group->id;
             $user->save();
             ray($user);
         });
     }
-
 }
