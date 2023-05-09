@@ -2,7 +2,7 @@
 
 use Seeder;
 use DigArt\Kino\Models\Genre;
-javascript:;
+
 class Seeder109 extends Seeder
 {
     public function run()
